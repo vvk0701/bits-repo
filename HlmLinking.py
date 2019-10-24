@@ -9,6 +9,7 @@ def toWrite(file, str):
 def restartService(service):
     cmd = 'service-control --restart %s' %(service)
     response = subprocess.call(cmd, shell=true)
+    print (response)
     return response
 
 def main():
